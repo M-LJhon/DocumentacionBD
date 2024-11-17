@@ -78,10 +78,12 @@ de una base de datos. Sus características principales son:
 
 **Principales comandos**:
 
-
 SELECT: Para consultar datos.
+
 INSERT: Para insertar nuevos registros.
+
 UPDATE: Para modificar registros existentes.
+
 DELETE: Para eliminar registros.
 
 **Características importantes**:
