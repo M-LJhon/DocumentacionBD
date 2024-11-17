@@ -78,13 +78,13 @@ de una base de datos. Sus características principales son:
 
 **Principales comandos**:
 
-SELECT: Para consultar datos.
+- SELECT: Para consultar datos.
 
-INSERT: Para insertar nuevos registros.
+- INSERT: Para insertar nuevos registros.
 
-UPDATE: Para modificar registros existentes.
+- UPDATE: Para modificar registros existentes.
 
-DELETE: Para eliminar registros.
+- DELETE: Para eliminar registros.
 
 **Características importantes**:
 
@@ -97,10 +97,14 @@ Son las operaciones más frecuentes en una base de datos.
 
 *Consultas simples y complejas*:
 Filtrado de datos (WHERE)
-Ordenamiento (ORDER BY)
-Agrupamiento (GROUP BY)
-Joins entre tablas,
-subconsultas
+
+- rdenamiento (ORDER BY)
+
+- Agrupamiento (GROUP BY)
+
+- Joins entre tablas,
+
+- subconsultas
 
 **Aspectos a considerar:**
 
@@ -109,13 +113,6 @@ Integridad de los datos
 Concurrencia de usuarios
 Transaccionalidad.
 
-**Cláusulas importantes:**
-
-WHERE: Para filtrar registros
-GROUP BY: Para agrupar resultados
-HAVING: Para filtrar grupos
-ORDER BY: Para ordenar resultados
-JOIN: Para combinar tablas.
 
 # 6. Modelo de los Datos
 ## 6.1. Modelo Entidad-Relación (MER/DER):
