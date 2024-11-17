@@ -59,10 +59,6 @@ importantes, como pérdida de datos, redundancia de datos y datos incorrectos.
 - DROP: Para eliminar objetos.
 - TRUNCATE: Para vaciar el contenido de una tabla.
 
-- ALTER: Para modificar objetos existentes.
-- DROP: Para eliminar objetos.
-- TRUNCATE: Para vaciar el contenido de una tabla.
-
 3. **Operaciones comunes**:
 - Definición de tablas y sus columnas.
 - Establecimiento de claves primarias y foráneas.
