@@ -96,15 +96,16 @@ Son las operaciones más frecuentes en una base de datos.
 **Operaciones comunes**:
 
 *Consultas simples y complejas*:
-Filtrado de datos (WHERE)
 
-- rdenamiento (ORDER BY)
+- Filtrado de datos (WHERE)
+
+- Ordenamiento (ORDER BY)
 
 - Agrupamiento (GROUP BY)
 
-- Joins entre tablas,
+- Joins entre tablas.
 
-- subconsultas
+- Subconsultas.
 
 **Aspectos a considerar:**
 
