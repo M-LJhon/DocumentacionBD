@@ -34,6 +34,19 @@ Ahora hablaremos de los Tipos de Bases de Datos, Clasificándolas Según Su Estr
 - **Bases de Datos Distribuidas**: Los datos se almacenan en varios nodos (servidores o dispositivos) conectados por una red. Cada nodo puede manejar una parte de la base de datos.
 - **Bases de Datos en la Nube**: Se alojan en servidores remotos administrados por proveedores de servicios en la nube. Los usuarios acceden a ellas a través de internet.
 # 4. Conceptos Fundamentales
+## Abstracción de los datos:
+- Representación conceptual de los datos que no incluye muchos detalles 
+de cómo se almacenan.
+ - Modelo de datos: tipo de abstracción de los datos con que se obtiene 
+una representación conceptual.
+ - Se oculta los detalles de almacenamiento e implementación.
+## Las anomalías en SQL:
+Son inconsistencias o irregularidades que ocurren 
+en una base de datos y que afectan su funcionamiento normal y la integridad 
+de los datos. Suelen ser consecuencia de un diseño deficiente de la base de 
+datos y pueden causar problemas 
+importantes, como pérdida de datos, redundancia de datos y datos incorrectos.
+# 5. Lenguaje de los Datos
 ## LDD (Lenguaje de Definición de Datos)
 1. **Propósito**:
 - Define la estructura de la base de datos
