@@ -138,7 +138,7 @@ Tienen cardinalidad que indica cuántas instancias de una entidad se relacionan 
 
 ## 6.3. Llaves o claves en las bases de datos:
 
-![TIPOS DE LLAVES EN BD](/img/firefox_wWKdXDcPqo.png)
+![TIPOS DE LLAVES EN BD](/img/firefox_ZjVMRg9gkt.png)
 
 # 7. Normalización de Bases de Datos
 ## 7.1. Definición de normalización.
