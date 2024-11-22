@@ -150,6 +150,7 @@ Eliminar redundancias y dependencias problemáticas de una base de datos.
     - Eliminar grupos repetitivos.
     - Cada atributo debe ser atómico (no divisible).
     - Cada columna debe tener un nombre único.
+- **2FN**: La Segunda Forma Normal (2FN) se basa en el concepto de dependencia funcional completa, es decir, todos los atributos no clave deben depender de TODA la clave primaria.
 
 
 
