@@ -7,7 +7,7 @@ Una base de datos es una estructura digital que utiliza modelos estructurados pa
 ## 1.2. Significado de las siglas RDBMS y DBMS.
 DBMS significa "Database Management System" (Sistema de Gestión de Bases de Datos), el cual es software diseñado para gestionar bases de datos relacionales y no relacionales, además de eso nos permite gestionar, almacenar y recuperar datos.
 
-Por otro lado RDBMS significa "Relational Database Management System" (Sistema de Gestión de Bases de Datos Relacionales), es un tipo específico de DBMS que maneja bases de datos relacionales a través del uso de tablas con columnas y filas o tuplas. Entre algunos ejemplos nos encontramos con MySQL, el cual estaremos usando en este tutorial, PostgreSQL, Oracle, entre otros.
+Por otro lado RDBMS significa "Relational Database Management System" (Sistema de Gestión de Bases de Datos Relacionales), es un tipo específico de DBMS que maneja bases de datos relacionales a través del uso de tablas con columnas y filas o tuplas. Entre algunos ejemplos nos encontramos con MySQL, PostgreSQL, Oracle, entre otros.
 
 ![RDBMS Y DBMS](/img/DBMS-FEAT.webp)
 
@@ -143,4 +143,6 @@ Tienen cardinalidad que indica cuántas instancias de una entidad se relacionan 
 # 7. Normalización de Bases de Datos
 ## 7.1. Definición de normalización.
 La normalización es un proceso sistemático para organizar y estructurar las bases de datos relacionales, eliminando redundancias y dependencias problemáticas.
+## 7.2. Objetivos de la normalización.
+Eliminar redundancias y dependencias problemáticas de una base de datos.
 
