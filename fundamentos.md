@@ -145,4 +145,12 @@ Tienen cardinalidad que indica cuántas instancias de una entidad se relacionan 
 La normalización es un proceso sistemático para organizar y estructurar las bases de datos relacionales, eliminando redundancias y dependencias problemáticas.
 ## 7.2. Objetivos de la normalización.
 Eliminar redundancias y dependencias problemáticas de una base de datos.
+## 7.3. Formas normales.
+- **0FN**: 
+    - Eliminar grupos repetitivos.
+    - Cada atributo debe ser atómico (no divisible).
+    - Cada columna debe tener un nombre único.
+
+
+
 
