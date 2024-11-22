@@ -5,7 +5,7 @@ Una base de datos es una estructura digital que utiliza modelos estructurados pa
 ![Bases de datos](img/DBI-1.jpg)
 
 ## 1.2. Significado de las siglas RDBMS y DBMS.
-DBMS significa "Database Management System" (Sistema de Gestión de Bases de Datos), el cual es software diseñado para gestionar bases de datos relacionales y no relacionales, además de eso nos permite gestionar, almacenar y recuperar datos.
+DBMS significa "Database Management System" (Sistema de Gestión de Bases de Datos), el cual es un software diseñado para gestionar bases de datos relacionales y no relacionales, además de eso nos permite gestionar, almacenar y recuperar datos.
 
 Por otro lado RDBMS significa "Relational Database Management System" (Sistema de Gestión de Bases de Datos Relacionales), es un tipo específico de DBMS que maneja bases de datos relacionales a través del uso de tablas con columnas y filas o tuplas. Entre algunos ejemplos nos encontramos con MySQL, PostgreSQL, Oracle, entre otros.
 
