@@ -1,0 +1,13 @@
+select * from cliente where idCliente = 35;
+
+select fechaNacimiento from cliente where idCliente = 35;
+
+SELECT encabezado.idEncabezado, cliente.nombreCliente, encabezado.fecha, encabezado.total, cajero.nombreCajero, metodoPago.tipoMetodo
+FROM encabezado
+LEFT JOIN detalle ON encabezado.idDetalle = detalle.idDetalle
+LEFT JOIN cajero ON encabezado.idCajero = cajero.idCajero
+LEFT JOIN metodoPago ON encabezado.numPago = metodoPago.numPago
+LEFT JOIN cliente ON encabezado.idCliente = cliente.idCliente
+LEFT JOIN factura ON  encabezado.idEncabezado = factura.idEncabezado
+
+

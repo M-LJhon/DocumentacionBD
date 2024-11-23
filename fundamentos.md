@@ -146,12 +146,92 @@ La normalización es un proceso sistemático para organizar y estructurar las ba
 ## 7.2. Objetivos de la normalización.
 Eliminar redundancias y dependencias problemáticas de una base de datos.
 ## 7.3. Formas normales.
-- **1FN**: 
-    - Eliminar grupos repetitivos.
-    - Cada atributo debe ser atómico (no divisible).
-    - Cada columna debe tener un nombre único.
-- **2FN**: La Segunda Forma Normal (2FN) se basa en el concepto de dependencia funcional completa, es decir, todos los atributos no clave deben depender de TODA la clave primaria.
+# Normalización de Bases de Datos
 
+## ¿Qué es la Normalización?
+
+La normalización es un proceso sistemático para organizar datos en una base de datos. Su objetivo principal es eliminar la redundancia y garantizar la integridad de los datos.
+
+
+## Ventajas de la Normalización
+
+- Elimina la redundancia de datos
+- Asegura la consistencia de datos
+- Facilita el mantenimiento de la base de datos
+- Optimiza el espacio de almacenamiento
+- Mejora la integridad de datos
+
+## Formas Normales
+
+### Primera Forma Normal (1FN)
+Una tabla está en Primera Forma Normal cuando:
+- Cada columna contiene valores atómicos (indivisibles)
+- No hay grupos repetitivos
+- Existe una clave primaria
+
+
+
+### Segunda Forma Normal (2FN)
+Una tabla está en Segunda Forma Normal cuando:
+- Está en 1FN
+- Todos los atributos no clave dependen por completo de la clave primaria
+- No existen dependencias parciales
+
+
+
+### Tercera Forma Normal (3FN)
+Una tabla está en Tercera Forma Normal cuando:
+- Está en 2FN
+- No existen dependencias transitivas
+- Los atributos no clave dependen directamente de la clave primaria
+
+
+
+## Problemas que Resuelve la Normalización
+
+1. **Anomalías de Inserción**
+   - Evita la necesidad de insertar datos múltiples veces
+   - Previene inconsistencias al agregar registros
+
+2. **Anomalías de Actualización**
+   - Elimina la necesidad de actualizar el mismo dato en múltiples lugares
+   - Reduce el riesgo de datos inconsistentes
+
+3. **Anomalías de Eliminación**
+   - Previene la pérdida accidental de datos
+   - Mantiene la integridad referencial
+
+
+## Consideraciones Importantes
+
+### ¿Cuándo Normalizar?
+- Al diseñar una nueva base de datos
+- Al necesitar mejor organización de datos
+- Cuando hay problemas de redundancia
+- Para mejorar la integridad de datos
+
+### ¿Cuándo No Normalizar?
+- Cuando el rendimiento es crítico
+- En bases de datos de solo lectura
+- En almacenes de datos históricos
+- Cuando la redundancia es necesaria
+
+## Conclusiones
+
+La normalización es fundamental para:
+- Diseñar bases de datos eficientes
+- Mantener la integridad de datos
+- Facilitar el mantenimiento
+- Reducir errores de datos
+
+Sin embargo, es importante encontrar un balance entre la normalización y los requisitos específicos de cada proyecto.
+
+---
+
+## Referencias
+1. Edgar F. Codd - "A Relational Model of Data for Large Shared Data Banks"
+2. Date, C.J. - "Introducción a los Sistemas de Bases de Datos"
+3. Silberschatz, Korth, Sudarshan - "Fundamentos de Bases de Datos"
 
 
 

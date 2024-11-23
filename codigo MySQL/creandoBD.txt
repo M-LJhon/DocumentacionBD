@@ -1,0 +1,60 @@
+create table cliente(idCliente int not null primary key auto_increment, nombreCliente varchar(50), apellidoCliente varchar(50), emailCliente varchar(150), telefonoCliente varchar(10), identificacionCliente varchar(35), fechaNacimiento date);
+create table producto(idProducto int not null primary key auto_increment, nomProducto varchar(50), precioProducto decimal(12,3), stock int, tiempoAnejo decimal, gradoAlcohol decimal, tamanoProducto decimal, codigoBarras varchar(50));
+create table factura(numeroFactura int not null primary key auto_increment);
+create table cajero(idCajero int not null primary key auto_increment, nombreCajero varchar(50), apellidoCajero varchar(50), identificacionCajero varchar(14), numeroCaja int);
+create table encabezado(idEncabezado int not null primary key auto_increment, fecha date, total decimal(12,3));
+create table marca(idMarca int not null primary key auto_increment, nombreMarca varchar(50));
+create table categoria(idCategoria int not null primary key auto_increment, descripcion varchar(90));
+create table metodoPago(numPago int not null primary key auto_increment, tipoMetodo varchar(90));
+create table proveedor(idProveedor int not null primary key auto_increment, nombProveedor varchar(50), nitProveedor varchar(13), direccion varchar(35), emailProveedor varchar(150), telefonoProveedor varchar(10));
+create table detalle(idDetalle int not null primary key auto_increment, cantidadProducto int);
+
+alter table producto add idMarca int;
+alter table producto add constraint fk_idMarca foreign key (idMarca) references marca(idMarca);
+desc producto;
+
+alter table producto add idCategoria int;
+alter table producto add constraint fk_idCategoria foreign key (idCategoria) references categoria(idCategoria);
+desc producto;
+
+alter table factura add idEncabezado int;
+alter table factura add idDetalle int;
+alter table factura add constraint fk_idEncabezado foreign key (idEncabezado) references encabezado(idEncabezado);
+alter table factura add constraint fk_idDetalle foreign key (idDetalle) references detalle(idDetalle);
+desc factura;
+
+alter table encabezado add idCliente int;
+alter table encabezado add numPago int;
+alter table encabezado add idCajero int;
+alter table encabezado add constraint fk_idCliente foreign key (idCliente) references cliente(idCliente);
+alter table encabezado add constraint fk_numPago foreign key (numPago) references metodoPago(numPago);
+alter table encabezado add constraint fk_idCajero foreign key (idCajero) references cajero(idCajero);
+desc encabezado;
+
+alter table marca add idProveedor int;
+alter table marca add constraint fk_idProveedor foreign key (idProveedor) references proveedor(idProveedor);
+desc marca;
+
+alter table detalle add idProducto int;
+alter table detalle add constraint fk_idProducto foreign key (idProducto) references producto(idProducto);
+desc detalle;
+
+insert into cliente(nombreCliente, idCliente, emailCliente) values ("JHON", 1, "correo@correo.com");
+select * from cliente;
+
+insert into cliente values(2, "Carlos", "Lopez", "carloslopez@gmail.com", "3137763388", "1111111111", 01/09/1991);
+
+insert into categoria values(1, "Whisky"), (2, "Ron"), (3, "Tequila"), (4, "Vino"), (5, "Cerveza");
+
+insert into cajero values(1, "Marco", "Mejia", "2222222", 1), (2, "Camila", "Ordonez", "333333", 2), (3, "Jhon", "Mejia", "444444", 3);
+
+insert into metodoPago values(1, "Datafono"), (2, "Efectivo"), (3, "Credito"), (4, "Nequi");
+
+insert into detalle values(1, 3, 10);
+
+insert into encabezado values(1, 2024/11/19, 2195337,  17, 1, 2);
+update encabezado set fecha = "2024-11-19" where  idEncabezado = 1;
+
+insert into factura values(1, 1, 1);
+alter table encabezado add idDetalle int;
+alter table encabezado add constraint fk_idDetalle2 foreign key (idDetalle) references detalle(idDetalle);
